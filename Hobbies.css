@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');/* header */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+  
+    top: 2.6875em;;
+    width: 100%;
+
+    padding-right: 14.375em;
+    z-index: 2;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    /* padding: 14px 16px; */
+    padding: 3em 4em 0em;
+    /* background-color: #333; */
+    /* text-decoration: none; */
+
+}
+
+.nav_links{
+    padding-right: 6.375em;
+    font-size: 1.1em;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color:#7C99AC ;
+}
+
+.nav_links li a:hover{
+
+    color: #08f5cd;
+    text-decoration: none;
+}
+
+/* underline effect when hovering over text  */
+.nav_links li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #08f5cd;
+    display: block;  
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_links li a:hover::after{
+    width: 100%
+}
+
+.name{
+     float: left;
+     padding-right: 20em;  
+     
+  
+}
+
+.image{
+    width: 12%;
+    /* padding-top: 49px; */
+    /* padding-left: -3px; */
+    /* padding-right: 32px;*/
+    margin-right: 0px; 
+    margin-left: 379px;
+
+    padding-right: 9px;
+    padding-left: 0px;
+    padding-top: 52px;
+}
+
+ul .image:hover{
+    cursor: pointer;
+}
+
+.head{
+    /* position: relative;
+    position: fixed; */
+    top: 0;
+    width: 100%;
+}
+
+
+
+/* icons */
+
+.container{
+    /* height: 100vh ; */
+    width: 100%;
+     display: flex;      /* all content will be displayed in the center */
+     align-items:flex-start;
+     justify-content: center;
+     /* background: #f2f2fe;  */
+     margin-top: 8px;
+    
+}
+.icons a{
+    /* we use inline to make the icons appear horizontally not vertically */
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    /* to remove underline thing on icons */
+    text-decoration: none; 
+    font-size:  50px;
+    /* to add sepration betweeen icons */
+    margin: 70px;
+    /*  to add backround shadow, makes icons look like 3D objects */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+
+    /*  we add 50% to each color to make icons color half red and half white */
+    /* background-image: linear-gradient(#fff 50%, red 50%); */
+    /* 1st is width 2nd height of the background */
+    /* it also decrease red block to hide the red half on the icons */
+    background-size: 100% 200px;
+    /* 1st x-axis 2nd y-axis */
+    background-position: 0 5%;
+    /* to add a delay to scrool up  while we hover the cursor on icons scrool up  */
+    transition: background-position 0.5s, color 0.5s;
+    /* to added "(color 0.5s)" to add color inverted while we hover the cursor over the icons */
+
+
+
+}
+/* we used  " nth child(1) " to select the first anchor ta i.e "(a)" of facebook  */
+.icons a:nth-child(1){
+    color: #1976d3;
+    background-image: linear-gradient(#fff 50%, #1976d3 50%);
+}
+.icons a:nth-child(2){
+    color: #f44236;
+    background-image: linear-gradient(#fff 50%, #f44236 50%);
+}
+.icons a:nth-child(3){
+    color: #f44236;
+    background-image: linear-gradient(#fff 50%, #f44236 50%);
+}
+.icons a:nth-child(4){
+    color: #03a9f5;
+    background-image: linear-gradient(#fff 50%, #03a9f5 50%);
+}
+/* to add hover effect on the icons */
+/* background-position: 0 5%; increseas from 5% to 100% */
+.icons a:hover{
+    background-position: 0 100%;
+    /* to add color inverted while we hover the cursor over the icons */
+    color: #fff;
+
+}
+
+
+
+/* heading */
+
+.main-head2 h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300; 
+
+}
+
+.main-head2{
+    display: flex;
+    justify-content: center;
+    text-align:start;
+    
+    margin-top: 82px;
+
+
+    font-size:3.4375rem; 
+   
+    color: #BD9CFA;
+    text-decoration: underline;
+    
+    animation: picture-animation3 3s forwards;
+}
+
+@keyframes picture-animation3 {
+    0%{
+       width: 75%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.text{
+    display: inline-flex;  
+
+    animation: picture-animation4 3s forwards;
+}
+
+.center-icons{
+    animation: picture-animation4 3s forwards;
+}
+
+@keyframes picture-animation4 {
+    0%{
+       opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+.text h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+#tennis{
+    margin-left: 323.008px;
+}
+
+#video{
+    margin-left: 6.6875rem;
+
+}
+
+#photo{
+    margin-left: 6.875rem;
+}
+
+#game{
+    margin-left: 8.6875rem;
+}

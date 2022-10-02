@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400;700&display=swap');
+/* Header */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background:#BD9CFA ;    
+ 
+}
+
+ul{
+
+    font-family: "Montserrat", sans-serif; 
+    list-style-type: none;
+    overflow: hidden;
+    
+    top: 2.6875em;;
+    width: 100%;
+
+    padding-right: 14.375em;
+    z-index: 1;
+}
+
+header div nav ul{
+    background-color: white;
+    
+
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+   
+    padding: 3em 4em 0em;
+  
+
+}
+
+.nav_links{
+    padding-right: 6.375em;
+    font-size: 1.1em;
+
+    background-color: white;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color:#7C99AC ;
+
+    background-color: white;
+}
+
+.nav_links li a:hover{
+
+    color: #08f5cd;
+    text-decoration: none;
+}
+
+/* underline effect when hovering over text  */
+.nav_links li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #08f5cd;
+    display: block;  
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_links li a:hover::after{
+    width: 100%
+}
+
+.name{
+     float: left;
+     padding-right: 20em;  
+     
+  
+}
+
+
+.image{
+    width: 12%;
+   
+    margin-right: 0px; 
+    margin-left: 379px;
+
+    padding-right: 9px;
+    padding-left: 0px;
+    padding-top: 52px;
+
+    background-color: white;
+
+}
+
+ul .image:hover{
+    cursor: pointer;
+}
+
+
+
+/* wave */
+
+#wave {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}  
+
+
+
+/* porgress bar */
+
+
+.BAR {
+    position: relative;
+    top: 55px;    
+    margin-left: 160px;
+    padding-left: 205px;
+    padding-right: 106px;
+}
+
+.BAR , .progress-bar h2{
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(100, 98, 98);
+
+    letter-spacing: 5px;
+}
+
+
+
+
+/* top's */
+
+#CSS-top{
+    top: 64px;
+}
+#JavaScript-top{
+    top: 132px;
+}
+#PHP-top{
+    top: 201px;
+}
+#React-top{
+    top: 264px;
+}
+
+
+
+
+
+
+
+
+/* animation bars */
+#HTML_bar{
+    animation: progress-animation 3s forwards;
+    }
+    
+#CSS-bar{ 
+    animation: progress-animation-CSS 3s forwards;
+}
+
+#JavaScript-bar{
+   animation: progress-animation-JavaScript 3s forwards;
+}
+
+#PHP-bar{
+    animation: progress-animation-PHP 3s forwards;
+}
+#React-bar{
+    animation: progress-animation-PHP 3s forwards;
+}
+
+
+
+
+
+
+
+.container8{
+    height: 20px;
+    background: #BD9CFA;
+    position: relative;
+    border-radius: 7px;
+
+
+}
+
+
+.container8 .progress-bar{
+    position: relative; 
+    
+
+    border-radius: 7px;
+    height: 100%;
+    background-color: #E8886F; 
+    
+}
+
+
+
+@keyframes progress-animation {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 64%;
+    }
+}
+
+@keyframes progress-animation-CSS {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 34%;
+    }
+}
+@keyframes progress-animation-JavaScript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 8%;
+    }
+}
+@keyframes progress-animation-PHP {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 5%;
+    }
+}
+@keyframes progress-animation-React {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 5%;
+    }
+}
+
+.person{
+    position: absolute;   
+    
+    display: flex;
+    
+
+    width: 400px;
+    height: 300px; 
+
+    transform: rotate(-45deg); 
+
+
+    z-index: 1;
+    margin-left: -12px;
+    margin-top: -161px;
+    transform: rotate(-39deg);
+    background: none;
+
+    animation: picture-animation 3s forwards;
+}
+
+@keyframes picture-animation {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.person2{
+    position: absolute; 
+    display: flex;
+  
+    z-index: 1;
+ 
+    background: none;
+
+
+    width: 606px;
+    height: 467px;
+    margin-left: 912px;
+    margin-top: -54px;
+
+
+    animation: picture-animation2 3.7s forwards;
+
+}
+
+@keyframes picture-animation2 {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+.main-head{
+    display: flex;
+    justify-content: center;
+    text-align:start;
+    
+    font-size:3.4375rem; 
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(240, 233, 233);
+    text-decoration: underline;
+    
+    animation: picture-animation3 3s forwards;
+}
+
+@keyframes picture-animation3 {
+    0%{
+       width: 75%;
+    }
+    100%{
+        width: 100%;
+    }
+}
